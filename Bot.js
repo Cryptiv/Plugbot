@@ -1,11 +1,3 @@
-/*
- * With this, any Plug.DJ user is able to turn their account into a fully-featured bot for their room.
- * This script is protected under the Limited Use license (LU).
- * Author: Harry J. (Royal_Soda)
- * http://www.harry-j.com/
-*/
-
-
 //Welcome a user upon joining/entering.
 function join(user) { 
 
