@@ -3,8 +3,11 @@
 //Welcome a user upon joining/entering.
 function join(user) { 
 
+     var welcomeArray = [
+        "Hi];
+        
 	//Print the message to chat.
-    API.sendChat("Hi" + " @" + user.username) 
+    API.sendChat(welcomeArray + " @" + user.username) 
 } 
 
 //Say good-bye to the user.
