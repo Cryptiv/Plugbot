@@ -9,7 +9,7 @@
 //Welcome a user upon joining/entering.
   
 //Print the message to chat.
-    API.sendChat("FARTS"" + " @" + user.username)
+    API.sendChat("FARTS" + " @" + user.username)
 }
 
 //Say good-bye to the user.
