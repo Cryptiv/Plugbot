@@ -97,11 +97,7 @@ isChat = true;
         if (isChat != true) {
 
             var watArray = [
-                "I don't know what you're trying to tell me. @" + data.from + "",
-                "Hey, we bots need some sleep too.",
-                "I'm not in a chatty mood right now"];
-  
-            var randomN = Math.floor(Math.random() * watArray.length);
+                "LORD"];
   
             API.sendChat(watArray[randomN]);
         }
