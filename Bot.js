@@ -7,15 +7,9 @@
 
 
 //Welcome a user upon joining/entering.
-function join(user) {
-
-    var welcomeArray = [
-        "FARTS"];
-
-    var randomN = Math.floor(Math.random() * welcomeArray.length);
   
 //Print the message to chat.
-    API.sendChat(welcomeArray[randomN] + " @" + user.username)
+    API.sendChat("FARTS"" + " @" + user.username)
 }
 
 //Say good-bye to the user.
