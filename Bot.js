@@ -2,7 +2,7 @@
 function join(user) { 
 
 	//Print the message to chat.
-    API.sendChat("FARTS" + " @" + user.username) 
+    API.sendChat("Hi" + " @" + user.username) 
 } 
 
 //Say good-bye to the user.
