@@ -1,13 +1,37 @@
+/*
+ * With this, any Plug.DJ user is able to turn their account into a fully-featured bot for their room.
+ * This script is protected under the Limited Use license (LU).
+ * Author: Harry J. (Royal_Soda)
+ * http://www.harry-j.com/
+*/
+
+
 //Welcome a user upon joining/entering.
 function join(user) { 
 
     var welcomeArray = [
-        "Welcome to INDIE+"];
+        "Fuck you"];
 	
     var randomN = Math.floor(Math.random() * welcomeArray.length); 
   
 	//Print the message to chat.
     API.sendChat(welcomeArray[randomN] + " @" + user.username) 
+} 
+
+//Say good-bye to the user.
+//The user leaving won't see this, as the listener only sees the user has left until they closed, reloaded or exited their window.
+function leave(user) { 
+
+    var leaveArray = [ 
+        "@" + user.username + " left.",
+        "Catch ya later, @" + user.username + ".",
+        "Bye! @" + user.username];
+
+    var randomN = Math.floor(Math.random() * leaveArray.length); 
+
+	//Print the message to chat.
+    API.sendChat(leaveArray[randomN])
+
 }
 
 //Function called on upon a new chat message.
@@ -96,8 +120,7 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "NO",
-                "NO"];
+                "HEY @MINT"];
   
             var randomN = Math.floor(Math.random() * watArray.length); 
   
