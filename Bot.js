@@ -7,6 +7,7 @@
 
 
 //Welcome a user upon joining/entering.
+function join(user) {
   
 //Print the message to chat.
     API.sendChat("FARTS" + " @" + user.username)
