@@ -4,7 +4,7 @@
 function join(user) { 
 
      var welcomeArray = [
-        "Hi"];
+        "Welcome to INDIE+"];
         
 	//Print the message to chat.
     API.sendChat(welcomeArray + " @" + user.username) 
