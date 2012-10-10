@@ -24,7 +24,8 @@ function readChat(data) {
   
             API.sendChat("Hi"); 
         } 
-    }}
+    }
+}
 
 //Calls the methods above when the listener is activated.
 API.addEventListener(API.USER_JOIN, join);
