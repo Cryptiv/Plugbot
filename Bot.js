@@ -99,7 +99,7 @@ isChat = true;
             var watArray = [
                 "LORD"];
   
-            API.sendChat(watArray[randomN]);
+            API.sendChat(watArray);
         }
     }}
     
