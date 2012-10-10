@@ -21,9 +21,6 @@ function leave(user) {
 
     var randomN = Math.floor(Math.random() * leaveArray.length); 
 
-	//Print the message to chat.
-    API.sendChat(leaveArray[randomN])
-
 }
 
 //Function called on upon a new chat message.
