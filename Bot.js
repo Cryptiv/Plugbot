@@ -109,7 +109,7 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "NO];
+                "NO"];
   
             var randomN = Math.floor(Math.random() * watArray.length); 
   
