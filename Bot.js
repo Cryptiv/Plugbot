@@ -10,6 +10,22 @@ function join(user) {
     API.sendChat(welcomeArray[randomN] + " @" + user.username) 
 } 
 
+//Say good-bye to the user.
+//The user leaving won't see this, as the listener only sees the user has left until they closed, reloaded or exited their window.
+function leave(user) { 
+
+    var leaveArray = [ 
+        "@" + user.username + " left.",
+        "Catch ya later, @" + user.username + ".",
+        "Bye! @" + user.username];
+
+    var randomN = Math.floor(Math.random() * leaveArray.length); 
+
+	//Print the message to chat.
+    API.sendChat(leaveArray[randomN])
+
+}
+
 //Function called on upon a new chat message.
 function readChat(data) { 
 
@@ -96,7 +112,8 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "LORD"];
+                "NO",
+                "NO"];
   
             var randomN = Math.floor(Math.random() * watArray.length); 
   
