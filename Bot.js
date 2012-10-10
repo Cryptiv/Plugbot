@@ -32,7 +32,7 @@ function readChat(data) {
             var isChat = false; 
 
 		//Checks if the user stated 'what time is it'
-        if (data.message.indexOf('what time is it') != -1) {
+        if (data.message.indexOf('/time') != -1) {
 		
 			isChat = true;
 			
