@@ -27,9 +27,9 @@ function leave(user) {
 function readChat(data) { 
 
 		//Checks if the user stated 'what time is it'
-        if (data.message.indexOf('/time') != -1) {
+    if (data.message.indexOf('/time') != -1) {
 		
-			isChat = true;
+		isChat = true;
 			
             var currentTime = new Date() 
             var hours = currentTime.getHours() 
