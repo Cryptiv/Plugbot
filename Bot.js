@@ -1,3 +1,5 @@
+//nora
+
 //Welcome a user upon joining/entering.
 function join(user) { 
 
