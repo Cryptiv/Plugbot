@@ -2,7 +2,7 @@
 function join(user) { 
 
     var welcomeArray = [
-        "Fuck you"];
+        "Welcome to INDIE+"];
 	
     var randomN = Math.floor(Math.random() * welcomeArray.length); 
   
@@ -109,7 +109,7 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "HEY @MINT"];
+                "I'm a bot!"];
   
             var randomN = Math.floor(Math.random() * watArray.length); 
   
