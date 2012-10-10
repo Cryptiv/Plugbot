@@ -112,11 +112,9 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "NO"];
+                "/me NO"]; 
   
-            var randomN = Math.floor(Math.random() * watArray.length); 
-  
-            API.sendChat(watArray[randomN]); 
+            API.sendChat(watArray); 
         } 
     }}
 
