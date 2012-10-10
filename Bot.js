@@ -26,11 +26,6 @@ function leave(user) {
 //Function called on upon a new chat message.
 function readChat(data) { 
 
-	//Checks if a user tags your account in their message.
-    if (data.message.indexOf("@" + API.getSelf().username) > -1) {
-
-            var isChat = false; 
-
 		//Checks if the user stated 'what time is it'
         if (data.message.indexOf('/time') != -1) {
 		
@@ -58,6 +53,11 @@ function readChat(data) {
             API.sendChat("It's " + mytime + " somewhere in the cyberspace!");
 
         }
+
+	//Checks if a user tags your account in their message.
+    if (data.message.indexOf("@" + API.getSelf().username) > -1) {
+
+            var isChat = false; 
   
         //Where are you from? Where do you live? How are you doing?
 		//These are to make the bot seem a bit smarter.
