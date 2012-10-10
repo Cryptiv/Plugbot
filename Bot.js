@@ -8,21 +8,6 @@ function join(user) {
         
 	//Print the message to chat.
     API.sendChat(welcomeArray + " @" + user.username) 
-} 
-
-//Say good-bye to the user.
-//The user leaving won't see this, as the listener only sees the user has left until they closed, reloaded or exited their window.
-function leave(user) { 
-
-    var leaveArray = [ 
-        "@" + user.username + " left.",
-        "Catch ya later, @" + user.username + ".",
-        "Bye! @" + user.username];
-
-    var randomN = Math.floor(Math.random() * leaveArray.length); 
-
-	//Print the message to chat.
-    API.sendChat(leaveArray[randomN])
 
 }
 
