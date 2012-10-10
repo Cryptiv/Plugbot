@@ -21,11 +21,8 @@ function readChat(data) {
 
 		//If the message tagging your bot did not match any of the above.
         if (isChat != true) {
-		
-            var watArray = [
-                "Yes."]; 
   
-            API.sendChat(watArray); 
+            API.sendChat("Hi"); 
         } 
     }}
 
