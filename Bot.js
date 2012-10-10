@@ -15,7 +15,7 @@ function join(user) {
 function readChat(data) { 
 
 	//Checks if a user tags your account in their message.
-    if (data.message.indexOf("bot") > -1) {
+    if (data.message.indexOf("@" + API.getSelf().username) {
   
             API.sendChat("Hi"); 
         } 
