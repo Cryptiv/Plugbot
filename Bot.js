@@ -112,7 +112,7 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "Let's be friends!"]; 
+                "Yes."]; 
   
             API.sendChat(watArray); 
         } 
