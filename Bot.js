@@ -16,16 +16,10 @@ function readChat(data) {
 
 	//Checks if a user tags your account in their message.
     if (data.message.indexOf("GORDON IS STUPID") > -1) {
-
-            var isChat = false; 
-
-		//If the message tagging your bot did not match any of the above.
-        if (isChat != true) {
   
             API.sendChat("Hi"); 
         } 
     }
-}
 
 //Calls the methods above when the listener is activated.
 API.addEventListener(API.USER_JOIN, join);
