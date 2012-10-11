@@ -2,7 +2,7 @@
 function join(user) { 
 
     var welcomeArray = [
-        "Welcome to INDIE+"];
+        "/me Welcome to INDIE+"];
 	
     var randomN = Math.floor(Math.random() * welcomeArray.length); 
   
