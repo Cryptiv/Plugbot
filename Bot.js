@@ -117,7 +117,17 @@ function readChat(data) {
         } 
     }}
 
+//Say thank you if you get fanned.
+function fan(user) {
+	var fanArry = [
+		"Thank you for fanning me!"];
+            var randomN = Math.floor(Math.random() * fanArray.length);
+            
+            API.sendChat(fanArray[randomN] + "@" + user.username)
+}
+
 //Calls the methods above when the listener is activated.
 API.addEventListener(API.USER_JOIN, join);
 API.addEventListener(API.USER_LEAVE, leave);
 API.addEventListener(API.CHAT, readChat);
+API.addEventListener(API.USER_FAN, fan);
