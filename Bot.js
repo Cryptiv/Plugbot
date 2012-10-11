@@ -109,7 +109,7 @@ function readChat(data) {
         if (isChat != true) {
 		
             var watArray = [
-                "I'm a bot! @" + API.getSelf().username];
+                "I'm a bot!"];
 
             var randomN = Math.floor(Math.random() * watArray.length); 
   
