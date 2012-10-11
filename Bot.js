@@ -50,7 +50,7 @@ function readChat(data) {
 
 			//Prints the time in chat.
 			//The time is based off what time it is wherever your computer is located.
-            API.sendChat("It's " + mytime + " somewhere in the cyberspace!");
+            API.sendChat("It's " + mytime + " EST");
 
         }
 
