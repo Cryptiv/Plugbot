@@ -10,6 +10,17 @@ function join(user) {
     API.sendChat(welcomeArray[randomN] + " @" + user.username) 
 } 
 
+//Say thank you if you get fanned.
+function fan(user) {
+	
+    var fanArry = [
+	"Thank you for fanning me!"];
+		
+    var randomN = Math.floor(Math.random() * fanArray.length);
+            
+    API.sendChat(fanArray[randomN] + "@" + user.username);
+}
+
 //Say good-bye to the user.
 //The user leaving won't see this, as the listener only sees the user has left until they closed, reloaded or exited their window.
 function leave(user) { 
@@ -117,19 +128,10 @@ function readChat(data) {
         } 
     }}
 
-//Say thank you if you get fanned.
-function fan(user) {
-	
-    var fanArry = [
-	"Thank you for fanning me!"];
-		
-    var randomN = Math.floor(Math.random() * fanArray.length);
-            
-    API.sendChat(fanArray[randomN] + "@" + user.username);
-}
+
 
 //Calls the methods above when the listener is activated.
 API.addEventListener(API.USER_JOIN, join);
+API.addEventListener(API.USER_FAN, fan);
 API.addEventListener(API.USER_LEAVE, leave);
 API.addEventListener(API.CHAT, readChat);
-API.addEventListener(API.USER_FAN, fan);
