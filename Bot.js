@@ -4,6 +4,8 @@ function join(user) {
     var welcomeArray = [
         "Welcome to INDIE+"];
   
+    var randomN = Math.floor(Math.random() * welcomeArray.length);
+  
 	//Print the message to chat.
     API.sendChat(welcomeArray[randomN] + " @" + user.username) 
 } 
@@ -11,7 +13,7 @@ function join(user) {
 //Say thank you if you get fanned.
 function fan(user) {
 	
-    var fanArry = [
+    var fanArray = [
 	"Thank you for fanning me!"];
 		
     var randomN = Math.floor(Math.random() * fanArray.length);
@@ -119,12 +121,12 @@ function readChat(data) {
 		
             var watArray = [
                 "I'm a bot!"];
-  
-            API.sendChat(watArray); 
+                
+  	    var randomN = Math.floor(Math.random() * watArray.length);
+  	    
+            API.sendChat(watArray[randomN]); 
         } 
     }}
-
-
 
 //Calls the methods above when the listener is activated.
 API.addEventListener(API.USER_JOIN, join);
