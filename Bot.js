@@ -120,7 +120,7 @@ function readChat(data) {
             var watArray = [
                 "I'm a bot!"];
   
-            API.sendChat(watArray[randomN]); 
+            API.sendChat(watArray); 
         } 
     }}
 
