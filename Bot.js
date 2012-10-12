@@ -125,7 +125,7 @@ function fan(user) {
 		
     var randomN = Math.floor(Math.random() * fanArray.length);
             
-    API.sendChat(fanArray[randomN] + "@" + user.username)
+    API.sendChat(fanArray[randomN] + "@" + user.username);
 }
 
 //Calls the methods above when the listener is activated.
