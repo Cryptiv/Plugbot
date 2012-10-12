@@ -119,8 +119,6 @@ function readChat(data) {
 		
             var watArray = [
                 "I'm a bot!"];
-
-            var randomN = Math.floor(Math.random() * watArray.length); 
   
             API.sendChat(watArray[randomN]); 
         } 
