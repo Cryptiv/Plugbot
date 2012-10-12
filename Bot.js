@@ -3,8 +3,6 @@ function join(user) {
 
     var welcomeArray = [
         "Welcome to INDIE+"];
-	
-    var randomN = Math.floor(Math.random() * welcomeArray.length); 
   
 	//Print the message to chat.
     API.sendChat(welcomeArray[randomN] + " @" + user.username) 
